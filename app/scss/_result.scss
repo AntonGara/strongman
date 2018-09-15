@@ -1,0 +1,52 @@
+.result {
+    background-color: $main;
+    padding-top: 108px;
+    &__title {
+        color: #030303;
+        font-family: $optima;
+        font-size: 27px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        margin-bottom: 59px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 585px;
+        height: 290px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        &-dark {
+            background-color: $dark;
+        }
+        &-text {
+            padding-right: 43px;
+            padding-left: 43px;
+        }
+    }
+    &__desc {
+        width: 100%;
+        letter-spacing: 0.64px;
+        line-height: 16px;
+    }
+    &__line {
+        margin: 40px 0;
+        width: 230px;
+        height: 2px;
+        background-color: #f7892a;
+    }
+}

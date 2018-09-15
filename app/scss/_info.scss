@@ -1,0 +1,187 @@
+.info {
+    background-color: $main;
+    padding-top: 96px;
+    &-coach {
+        padding-top: 104px;
+    }
+    &-coach2 {
+        padding-top: 235px;
+    }
+    &-about {
+        padding-top: 120px;
+    }
+    &-about2 {
+        padding-bottom: 120px;
+    }
+    &__block {
+        &-1 {
+            padding-right: 0;
+        }
+        &-2 {
+            padding-left: 0;
+        }
+    }
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+    }
+    &__arrow {
+        margin-left: 5px;
+    }
+    &-diary {
+        padding-top: 74px;
+        padding-bottom: 74px;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 419px;
+        height: 108px;
+        box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+        background-color: #f88f35;
+        color: #f5f4f4;
+        font-family: $optima;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-left: -74px;
+        text-align: center;
+        &-diary {
+            margin-top: 62px;
+        }
+        & span {
+            max-width: 280px;
+        }
+    }
+    &__desc {
+        width: 538px;
+        height: 280px;
+        padding: 65px 65px 0 65px;
+        box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        &-about {
+            height: 287px;
+            padding: 60px 60px 0 60px;
+        }
+        &Img {
+            align-self: center;
+        }
+        &-big {
+            width: 100%;
+            height: 287px;
+        }
+        &-padding {
+            padding: 45px;
+            height: 552px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.64px;
+        &:last-child {
+            margin-top: 20px;
+        }
+        &-coach {
+            margin-top: 0!important;
+        }
+        &-big {
+            font-weight: 400;
+            color: #000000;
+            font-family: $optima;
+            font-size: 22px;
+            letter-spacing: 0.88px;
+        }
+    }
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+        background-color: #ffffff;
+        &-coach {
+            box-shadow: none;
+            background: transparent;
+            & img {
+                box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+            }
+        }
+        &-about {
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            box-shadow: none;
+            & img {
+                box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+            }
+        }
+        &-main {
+            box-shadow: none;
+            background: transparent;
+            & img {
+                box-shadow: none;
+            }
+        }
+        &-diary {
+            padding: 15px;
+        }
+        &-pt {
+            margin-top: 108px;
+        }
+    }
+    &__image {
+        &-coach {
+            position: absolute;
+            bottom: 0;
+            right: 145px;
+        }
+    }
+    &__link {
+        padding-top: 28px;
+        color: #000;
+        letter-spacing: 0.9px;
+        border-bottom: 1px solid rgba(7, 7, 7, 0.2);
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        color: #000000;
+        font-family: $optima;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        margin-top: 42px;
+        margin-bottom: 38px;
+        &-about {
+            margin-top: 142px;
+        }
+    }
+    &__items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &Title {
+            max-width: 130px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.app-franch {
+    padding-bottom: 120px;
+    &__title {
+        text-align: center;
+        color: #222222;
+        font-family: $optima;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 31px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 45px;
+        box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &__input {
+        border: none;
+        width: 216px;
+        height: 56px;
+        box-shadow: 0 10px 44px 1px rgba(73, 73, 73, 0.22);
+        background-color: #ffffff;
+        color: #959595;
+        font-family: $semibold-font;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.56px;
+        padding: 20px;
+        margin-right: 22px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__info {
+        margin-top: 25px;
+        text-align: center;
+        opacity: 0.6;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+    }
+    &__button {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 308px;
+        height: 56px;
+        background-color: #f7892a;
+        border: none;
+        color: #ffffff;
+        font-family: $optima;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+    }
+}

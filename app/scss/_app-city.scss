@@ -1,0 +1,60 @@
+.app-city {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    &-about {
+        background-color: $main;
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 603px;
+        height: 199px;
+        box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+        background-color: #ffffff;
+    }
+    &__title {
+        text-align: center;
+        color: #222222;
+        font-family: $optima;
+        font-size: 27px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        margin-bottom: 17px;
+    }
+    &__button {
+        width: 308px;
+        height: 56px;
+        background-color: #f7892a;
+        color: #ffffff;
+        font-family: $optima;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        border-radius: 0;
+        &:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        &-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__item {
+        width: 305px;
+        &:hover {
+            background-color: #ecebeb;
+        }
+    }
+}

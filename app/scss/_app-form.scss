@@ -1,0 +1,77 @@
+.app-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__input {
+        height: 40px;
+        width: 240px;
+        border: none;
+        border-bottom: 1px solid #000;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.44px;
+        padding: 5px;
+        margin-bottom: 5px;
+        &-coach {
+            width: 311px;
+            opacity: 0.5;
+            color: #0a0a0a;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.52px;
+            
+        }
+    }
+    &__select {
+        width: 311px;
+        margin: 0 auto;
+        display: block;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0px!important;
+        background: transparent;
+        color: #0a0a0a;
+        font-size: 13px;
+        letter-spacing: 0.52px;
+        margin-bottom: 5px;
+    }
+    &__info {
+        margin-top: 15px;
+        max-width: 240px;
+        opacity: 0.6;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        & span {
+            border-bottom: 1px solid #f7892a;
+        }
+        &-coach {
+            max-width: 310px;
+        }
+    }
+    &__button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 240px;
+        height: 39px;
+        background-color: #f7892a;
+        border: none;
+        margin: 0 auto;
+        color: #ffffff;
+        font-family: $optima;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+        margin-top: 17px;
+        &-coach {
+            width: 310px;
+            height: 57px;
+            margin-top: 30px;       
+        }
+    }
+}

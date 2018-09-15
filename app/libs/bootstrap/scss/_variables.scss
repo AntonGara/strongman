@@ -115,7 +115,7 @@ $enable-print-styles:       true !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // stylelint-disable
-$spacer: 1rem !default;
+$spacer: 120px !default;
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
@@ -184,7 +184,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1170px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");

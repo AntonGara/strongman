@@ -1,0 +1,71 @@
+.app-textBlock {
+    background-color: $main;
+    padding-top: 120px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        color: #0e0e0e;
+        font-family: $optima;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 20px;
+        &-small {
+            margin-top: 77px;
+            margin-bottom: 55px;
+        }
+    }
+    &__desc {
+        margin-top: 22px;
+        margin-bottom: 32px;
+        color: #0e0e0e;
+        font-size: 20px;
+    }
+    &__line {
+        width: 86px;
+        height: 3px;
+        background-color: #f88f35;
+        &-ques {
+            margin-top: 34px;
+            margin-bottom: 38px;
+        }
+    }
+    &__ques {
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: 7px;
+        border: 7px solid #f7892a;
+        background-color: #ffffff;
+        &-small {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    &__item {
+        margin-top: 50px;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        &-big {
+            margin-top: 0;
+            margin-bottom: 58px;
+            color: #000000;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            & span {
+                color: #f7892a;
+                letter-spacing: 1.2px;
+            }
+        }
+        &-small {
+            margin-top: 0;
+        }
+    }
+}

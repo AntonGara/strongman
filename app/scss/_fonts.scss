@@ -1,4 +1,9 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("MyriadPro", "../fonts/MyriadProRegular/MyriadProRegular");
+@include font-face("MyriadProSemiBold", "../fonts/MyriadProSemiBold/MyriadProSemiBold", 600);
+@include font-face("Optima", "../fonts/Optima/Optima");
+@include font-face("HelveticaNeueCyrMedium", "../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyrMedium");
+@include font-face("OpenSansRegular", "../fonts/OpenSansRegular/OpenSansRegular");
+@include font-face("ArialNarrowRegular", "../fonts/ArialNarrowRegular/ArialNarrowRegular");
+

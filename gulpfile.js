@@ -1,4 +1,4 @@
-var syntax        = 'sass'; // Syntax: sass or scss;
+var syntax        = 'scss'; // Syntax: sass or scss;
 
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
@@ -18,7 +18,7 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		// open: false,
+		open: true,
 		// online: false, // Work Offline Without Internet Connection
 		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
 	})
@@ -27,21 +27,25 @@ gulp.task('browser-sync', function() {
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
-	.pipe(rename({ suffix: '.min', prefix : '' }))
+	//.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
+	.pipe(gulp.dest('docs/css'))
 	.pipe(browserSync.stream())
 });
 
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap/bootstrap.bundle.min.js',
+		'app/libs/swiper/swiper.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
+	.pipe(gulp.dest('docs/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
 
@@ -67,3 +71,28 @@ gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 });
 
 gulp.task('default', ['watch']);
+
+gulp.task('html', function() {
+	return gulp.src([
+		'app/*.html',
+		'app/*.mp4'
+		])
+	.pipe(gulp.dest('docs/'))
+});
+
+gulp.task('img', function(){
+	return gulp.src([
+		'app/img/**/*.*',
+	],  {base: 'app/img/'}) 
+	.pipe(gulp.dest('docs/img/'));
+});
+
+gulp.task('fonts', function(){
+	return gulp.src([
+		'app/fonts/**/*.*',
+	],  {base: 'app/fonts/'}) 
+	.pipe(gulp.dest('docs/fonts/'));
+});
+
+gulp.task('build', ['styles', 'js', 'html', 'img', 'fonts']);
+

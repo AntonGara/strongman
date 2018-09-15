@@ -1,0 +1,40 @@
+.app-nav {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    &__navbar {
+        padding: 0;
+    }
+    &__logo {
+        margin-right: 85px;
+    }
+    &__img {
+        width: 214px;
+        height: 65px;
+    }
+    &__link {
+        color: #000;
+        font-family: $semibold-font;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.56px;
+        &:hover {
+            text-decoration: none;
+            color: #ef7f42;
+        }
+        &-active {
+            color: #ef7f42;
+        }
+    }
+    &__item {
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__phone {
+        color: #000;
+        font-family: $semibold-font;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+}

@@ -1,0 +1,33 @@
+.motivation {
+    background-color: $main;
+    padding-bottom: 120px;
+    &__image {
+        height: 416px;
+        box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+    }
+    &__text {
+        text-align: right;
+        color: #000000;
+        font-family: $optima;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 31px;
+        text-transform: uppercase;
+        letter-spacing: 0.50px;
+        &-orange {
+            color: #fd7201;
+            margin-bottom: 30px;
+        }
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}

@@ -1,0 +1,48 @@
+.app-video {
+    background-color: $main;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    &-main {
+        padding-bottom: 0;
+    }
+    &__content {
+        justify-content: center;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: $optima;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #010101;
+        letter-spacing: 1.44px;
+        margin-bottom: 39px;
+        & span {
+            color: #fd7602;
+            text-align: center;
+        }
+        &-mt {
+            margin-top: 39px;
+        }
+    }
+    &__block {
+        background-image: url(../img/video3.png);
+        background-size: cover;
+        height: 428px;
+        border-radius: 10px;
+        border: 11px solid #f88f35;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__play {
+        z-index: 999;
+        cursor: pointer;
+    }
+}

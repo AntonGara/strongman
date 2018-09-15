@@ -5,22 +5,469 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+    .about-coach {
+        padding-top: 0;
+    }
+    .video {
+        height: 461px;
+    }
+	.motivation {
+        padding-bottom: 39px;
+        &__block {
+            margin-top: 10px;
+            order: -1;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        &__text {
+            text-align: center;
+            &-orange {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .plan {
+        &__card {
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .programs {
+        &__card {
+            margin-bottom: 20px;
+        }
+        &__title {
+            max-width: 100%;
+            color: #000000;
+            font-family: $semibold-font;
+            font-size: 16px;
+            letter-spacing: 0.64px;
+            margin-bottom: 37px;
+            line-height: 24px;
+            & span {
+                color: #000000;
+                font-family: $semibold-font;
+                font-size: 16px;
+                letter-spacing: 0.64px;
+            }
+        }
+    }
+    .mission {
+        & h2 {
+            font-size: 23px;
+            letter-spacing: 0.92px;
+        }
+    }
+    .info {
+        padding-top: 20px;
+        &__block {
+            &-order {
+                order: 2;
+            }
+            &-1 {
+                padding-right: 15px;
+            }
+            &-2 {
+                padding-left: 15px;
+            }
+        }
+        &__inner {
+            justify-content: center;
+        }
+        &__items {
+            padding-bottom: 20px;
+            padding-top: 51px;
+        }
+        &__content {
+            box-shadow: 0 10px 43px rgba(0, 0, 0, 0.18);
+        }
+        &__title {
+            margin: 0;
+            width: 100%;
+            &-diary {
+                margin-top:0;
+            }
+            & span {
+                max-width: 100%;
+            }
+        }
+        &__desc {
+            width: 100%;
+            padding: 30px;
+            height: auto;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__img {
+            box-shadow: none;
+            &-pt {
+                margin-top: 0;
+            }
+        }
+        &__image {
+            &-coach {
+                position: relative;
+                right: 0;
+            }
+        }
+        &__subtitle {
+            margin-top: 38px;
+        }
+    }
+    .app-nav {
+        &__phoneBlock {
+            display: none;
+        }
+        &__logo {
+            margin-right: 0;
+        }
+    }
+    .app-business {
+        &__text {
+            background: #fff;
+            text-align: center;
+        }
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .app-franch {
+        &__inputs {
+            flex-direction: column;
+        }
+        &__input {
+            margin-right: 0;
+            margin-top: 5px;
+            width: 100%;
+        }
+    }
+    .app-textBlock {
+        padding-top: 20px;
+    }
+    .coach {
+        padding-top: 20px;
+        &__title {
+            text-align: center;
+        }
+        &__line {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .swiper {
+        &-container {
+            max-width: 470px;
+        }
+        &-slide {
+            max-width: 470px;
+        }
+        &-pagination {
+            display: none;
+        }
+        &__btn {
+            bottom: 40%;
+            border: none;
+            opacity: .3;
+            &-prev {
+                left: 0;
+            }
+            &-next {
+                right: 0;
+            }
+        }
+    }
+    .trainee {
+        &__image {
+            min-height: 0;
+        }
+        &__img {
+            position: relative;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        &__wrapper {
+            margin-top: 10px;
+        }
+        &__text {
+            height: 100%;
+            padding-bottom: 20px;
+        }
+    }
+    .result {
+        padding-top: 30px;
+        &__card {
+            &-2 {
+                order: 2;
+            }
+            &-4 {
+                order: 3;
+            }
+        }
+        &__title {
+            margin-bottom: 5px;
+        }
+    }
+    .author {
+        padding: 0;
+        & .swiper-slide {
+            opacity: 1;
+            transition: .5s;
+            & .author__image,
+            .author__slideTitle,
+            .author__slideDesc {
+                transform: scale(1);
+            }
+        }
+        &__next {
+            right: 0;
+        }
+        &__prev {
+            left: 0;
+        }
+        &__slideDesc {
+            margin-bottom: 0;
+        }
+    }
+    .about-coach {
+        &__header,
+        &__body {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .review {
+        &__title {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    .app-card {
+        &__text {
+            max-width: 90%;
+        }
+    }
+    .app-video {
+        padding: 0;
+    }
+    .app-city {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__inner {
+            width: 100%;
+        }
+    }
+    .app-method {
+        padding-bottom: 0;
+        &__content {
+            box-shadow: none;
+            background-color: transparent;
+        }
+        &__desc,
+        &__image {
+            background-color: #fff;
+        }
+    }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+    .trial {
+        &__inner {
+            flex-direction: column;
+            box-shadow: none;
+        }
+        &__form {
+            order: 2;
+        }
+    }
+    .app-method {
+        &__desc {
+            text-align: center;
+            padding: 0;
+            padding-top: 55px;
+        }
+    }
+    .video {
+        background-image: url(../img/video3.png);
+        background-size: cover;
+        &__title {
+            font-size: 18px;
+            margin-bottom: 29px;
+            letter-spacing: 1.08px;
+        }
+        &__desc {
+            font-size: 16px;
+            letter-spacing: 0.72px;
+        }
+        &__link {
+            font-size: 16px;
+            letter-spacing: 0.64px;
+            width: 300px;
+            height: 58px;
+        }
+        &__fullscreen-bg__video {
+            display: none;
+        }
+    }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+    .footer {
+        & .col-12 {
+            flex-direction: column;
+        }
+        & .block1 {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        & .block4 {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    }
+    .app-map {
+        &__frame {
+            height: 450px;
+        }
+    }
+    .trainee {
+        &__text {
+            padding: 0 20px 20px 20px;
+        }
+    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    .video {
+        height: 345px;
+    }
+    .trial {
+        padding: 0;
+        &__subtitle {
+            margin-top: 50px;
+        }
+        &__form {
+            min-width: 0;
+        }
+        &__title {
+            &-coach {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        &__contacts {
+            min-width: 0;
+        }
+    }
+    .app-form {
+        &__select,
+        &__button,
+        &__input {
+            width: 273px;
+        }
+        &__info {
+            max-width: 270px;
+        }
+    }
+    .app-franch {
+        padding: 0;
+    }
+    .app-business {
+        padding-bottom: 0;
+    }
+    .app-textBlock {
+        &__ques {
+            padding-right: 15px;
+            padding-left: 15px;
+            &-small {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    .result {
+        &__card {
+            max-width: 300px;
+            height: 580px;
+            &-1 {
+                order: 1;
+            }
+            &-2 {
+                order: 2;
+            }
+            &-3 {
+                order: 3;
+            }
+            &-4 {
+                order: 4;
+            }
+        }
+        &__item {
+            height: 50%;
+            width: 100%;
+            &-1 {
+                order: 2;
+            }
+        }
+    }
+    .app-card {
+        flex-direction: column;
+        height: auto;
+        &__img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        &__comment {
+            margin-bottom: 20px;
+        }
+    }
+    .app-method {
+        &__desc {
+            padding: 20px;
+        }
+        &__block {
+            padding: 0;
+        }
+    }
+    .about-coach {
+        &__body {
+            padding: 20px;
+        }
+    }
+    .material {
+        padding: 20px;
+    }
+    .info {
+        padding: 0;
+        &__block {
+            padding: 0;
+        }
+    }
+    .programs {
+        .col-12 {
+            padding: 0;
+        }
+    }
+    .img-responsive {
+        box-shadow: none!important;
+    }
 }
 
 

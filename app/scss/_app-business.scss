@@ -1,0 +1,22 @@
+.app-business {
+    padding-top: 80px;
+    padding-bottom: 125px;
+    &__text {
+        background-color: $main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        max-width: 513px;
+        color: #ff7b4b;
+        font-family: $optima;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.92px;
+    }
+    &__image {
+        padding: 0;
+    }
+}

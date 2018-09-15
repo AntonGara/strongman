@@ -1,0 +1,37 @@
+.header {
+    background-color: $main;
+    padding: 10px 0;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__town {
+        color: #5a5a5a;
+    }
+    &__block {
+        display: flex;
+    }
+    &__social {
+        margin-right: 99px;
+        & a {
+            color: #5a5a5a;
+            font-size: 16px;
+            margin-left: 14px;
+        &:first-child {
+              margin-left: 0;
+        }
+      }
+    }
+    &__lk {
+        & a {
+            color: #5a5a5a;
+        }
+        & img {
+            margin-left: 6px;
+        }
+    }
+    &__phone {
+        font-family: $semibold-font;
+    }
+}
