@@ -31,7 +31,6 @@ gulp.task('styles', function() {
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
-	.pipe(gulp.dest('docs/css'))
 	.pipe(browserSync.stream())
 });
 
@@ -94,5 +93,12 @@ gulp.task('fonts', function(){
 	.pipe(gulp.dest('docs/fonts/'));
 });
 
-gulp.task('build', ['styles', 'js', 'html', 'img', 'fonts']);
+gulp.task('css', function() {
+	return gulp.src([
+		'app/css/*.css'
+		])
+	.pipe(gulp.dest('docs/css/'))
+});
+
+gulp.task('build', ['styles', 'js', 'html', 'css', 'img', 'fonts']);
 
