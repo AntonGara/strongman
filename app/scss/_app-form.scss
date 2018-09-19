@@ -45,8 +45,13 @@
         font-size: 12px;
         font-weight: 400;
         letter-spacing: 0.48px;
-        & span {
+        & a {
+            color: currentColor;
             border-bottom: 1px solid #f7892a;
+            &:hover {
+                color: #f7892a;
+                text-decoration: none;
+            }
         }
         &-coach {
             max-width: 310px;

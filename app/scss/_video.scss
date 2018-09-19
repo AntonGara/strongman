@@ -60,5 +60,12 @@
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 0.8px;
+        &:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        &:focus {
+            outline: none;
+        }
     }
 }

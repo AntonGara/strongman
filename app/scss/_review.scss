@@ -29,8 +29,33 @@
         }
     }
     &__comments {
+        width: 100%;
         position: relative;
         z-index: 99;
+    }
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        top: -115px;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #212529;;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        &-prev {
+            right: 120px;
+        }
+        &-next {
+            right: 20px;
+        }
+    }
+    &__pagination {
+        top: -100px;
+        left: 205px;
+        max-height: 50px;
     }
 }
 .material {

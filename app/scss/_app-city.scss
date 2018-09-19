@@ -45,6 +45,9 @@
             text-decoration: none;
             color: #ffffff;
         }
+        &:focus {
+            outline: none;
+        }
         &-about {
             display: flex;
             justify-content: center;

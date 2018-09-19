@@ -37,6 +37,9 @@
             text-decoration: none;
             color: #000000;
         }
+        &:focus {
+            outline: none;
+        }
     }
     &__line {
         background-color:  rgba(7, 7, 7, 0.2);

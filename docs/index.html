@@ -97,7 +97,7 @@
 	<section class="video">
 		<div class="video__fullscreen-bg">
 			<video loop="" muted="" autoplay="" class="video__fullscreen-bg__video">
-				<source src="v1.mp4" type="video/mp4">
+				<source src="video/v1.mp4" type="video/mp4">
 			</video>
 		</div>
 		<div class="container">
@@ -106,14 +106,14 @@
 					<div class="video__content">
 						<h2 class="video__title">Физическая подготовка для детей от 3 лет</h2>
 						<div class="video__desc">Увлекательные тренировки с гарантией результата</div>
-						<a href="#" class="video__link">Записаться на бесплатное занятие</a>
+						<a href="#trial" class="video__link popup-form">Записаться на бесплатное занятие</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	<section class="info info-about info-about2">
+	<section class="info pt-xl-3 pb-xl-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-6 info__block info__block-order">
@@ -121,7 +121,7 @@
 					<div class="info__desc">
 						<span class="info__text info__text-coach">Физическое воспитание позволит стать вашему ребёнку здоровой и развитой личностью. Авторская методика школы «I’m Крепыш» является идеальным фундаментом для любого вида спорта в будущем</span>
 						<div class="info__inner">
-							<a href="#" class="info__link">Авторская методика</a>
+							<a href="about.html#author" class="info__link">Авторская методика</a>
 							<div class="info__arrow">&#8594</div>
 						</div>
                     </div>
@@ -217,7 +217,7 @@
 		</div>
 	</section>
 
-	<section class="info info-about info-about2">
+	<section class="info pb-xl-3 pt-xl-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-6 info__block">
@@ -225,7 +225,7 @@
 					<div class="info__desc">
 						<span class="info__text info__text-coach">Наши занятия прививают любовь к спорту с ранних лет. Игровые элементы вызывают интерес у ребёнка, а достижение уровней учит добиваться результата</span>
 						<div class="info__inner">
-							<a href="#" class="info__link">Как мы тренируемся</a>
+							<a href="how.html" class="info__link">Как мы тренируемся</a>
 							<div class="info__arrow">&#8594</div>
 						</div>
                     </div>
@@ -274,8 +274,9 @@
 					<div class="info__desc info__desc">
 						<span class="info__text info__text-coach">У ребёнка есть личный дневник, в котором он получает оценку от тренера за занятие, копит наклейки, меняя их на призы, и многое другое</span>
 						<div class="info__inner">
-							<a href="#" class="info__link">Бесплатное занятие</a>
+							<a class="info__link info__link-popup popup-form" href="#trial">Бесплатное занятие</a>
 							<div class="info__arrow">&#8594</div>
+
 						</div>
                     </div>
 				</div>
@@ -298,7 +299,7 @@
 					<div class="info__desc">
 						<span class="info__text info__text-coach">Родители следят за динамикой результатов онлайн, видят рейтинг своего ребёнка, текущий пройденный уровень, оценивают и оставляют отзыв о тренере,  смотрят вебинары с детскими специалистами в области психологии, педагогики и детского здоровья</span>
 						<div class="info__inner">
-							<a href="#" class="info__link">О школе</a>
+							<a href="about.html" class="info__link">О школе</a>
 							<div class="info__arrow">&#8594</div>
 						</div>
                     </div>
@@ -344,7 +345,7 @@
 								<option value="Выберите школу">Выберите школу</option>
 							</select>
 							<button class="app-form__button app-form__button-coach"type="submit">Записаться на занятие</button>
-							<div class="app-form__info app-form__info-coach">*Нажимая на кнопку вы даёте <span>согласие на обработку</span> своих персональных данных</div>
+							<div class="app-form__info app-form__info-coach">*Нажимая на кнопку вы даёте <a href="conf.docx" target="_blanc">согласие на обработку</a> своих персональных данных</div>
 						</form>
 					</div>
 					<div class="trial__map">
@@ -367,13 +368,13 @@
 					<div class="block2 block d-none d-xl-block">
 						<a href="about.html" class="menu-f">О школе</a>
 						<a href="how.html" class="menu-f">Как мы тренируемся</a>
-						<a href="index.html" class="menu-f">Блог</a>
+						<a href="#" class="menu-f">Блог</a>
 						<a href="adress.html" class="menu-f">Адреса школ</a>
 						<a href="franch.html" class="menu-f">Франшиза</a>        
 					</div>
 					<div class="block3 block d-none d-xl-block">
 						<a href="coach.html" class="menu-f">Тренера</a>
-						<a href="#" class="menu-f">Авторская методика</a>
+						<a href="about.html#author" class="menu-f">Авторская методика</a>
 						<a href="#" class="menu-f">Личный кабинет родителя</a>
 						<a href="about.html" class="menu-f">О компании</a>       
 					</div>
@@ -390,16 +391,31 @@
 				</div>
 			</div>
 		</div>
-  	</footer>
+	</footer>
+	  
+	<div id="trial" class="trial__form trial__form-popup mfp-hide">
+		<h2 class="trial__title">Запишитесь на первую <span>бесплатную тренировку прямо сейчас</span></h2>
+		<form class="app-form" action="" method="post">
+			<input class="app-form__input" type="text" name="name" placeholder="Имя">
+			<input class="app-form__input" type="tel" name="phone" placeholder="Телефон">
+			<input class="app-form__input" type="text" name="comment" placeholder="Сообщение">
+			<div class="app-form__info">*Нажимая на кнопку вы даёте <a href="conf.docx" target="_blanc">согласие на обработку</a> своих персональных данных</div>
+			<button class="app-form__button"type="submit">Отправить</button>
+		</form>
+	</div>  
 
 	<script src="js/scripts.min.js"></script>
 
 	<script>
+		$(document).ready(function() {
+			$('.popup-form').magnificPopup({
+				type: 'inline',
+			});
 
-        $('.app-video__play').click(function(){
-            $('.app-video__block').html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/A0AfiZjoYbA?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>');
+			$('.app-video__play').click(function(){
+				$('.app-video__block').html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/A0AfiZjoYbA?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>');
+			});
 		});
-		
     </script>
 
 </body>

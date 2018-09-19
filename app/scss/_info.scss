@@ -4,15 +4,6 @@
     &-coach {
         padding-top: 104px;
     }
-    &-coach2 {
-        padding-top: 235px;
-    }
-    &-about {
-        padding-top: 120px;
-    }
-    &-about2 {
-        padding-bottom: 120px;
-    }
     &__block {
         &-1 {
             padding-right: 0;
@@ -152,6 +143,9 @@
         &:hover {
             color: #000;
             text-decoration: none;
+        }
+        &:focus {
+            outline: none;
         }
     }
     &__subtitle {

@@ -129,7 +129,7 @@
                 <div class="col-12 app-city__content">
                     <div class="app-city__inner">
                         <h2 class="app-city__title">Приходите на бесплатное занятие</h2>
-                        <a href="#" class="app-city__button app-city__button-about">Записаться</a>
+                        <a href="#trial" class="app-city__button app-city__button-about popup-form">Записаться</a>
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                             <br><br>
                             Представьте, есть реальные показатели, по которым можно отследить динамику развития вашего ребёнка
                         </div>
-                        <a href="#" class="trainee__link">Смотреть как мы тренируемся → </a>
+                        <a class="popup-youtube trainee__link" href="https://www.youtube.com/watch?v=A0AfiZjoYbA">Смотреть как мы тренируемся → </a><br>
                         <div class="trainee__line"></div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
         </div>
     </section>
 
-    <section class="author">
+    <section id="author" class="author">
         <div class="container">
             <div class="row">
                 <h2 class="author__title text-center w-100">Авторы методик</h2>
@@ -273,7 +273,7 @@
         </div>
     </section>
 
-    <section class="info info-about">
+    <section class="info">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-6 info__block">
@@ -298,7 +298,7 @@
 		</div>
     </section>
 
-    <section class="info info-about2">
+    <section class="info pt-xl-3 pb-xl-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-6 info__block info__block-1">
@@ -345,7 +345,7 @@
 							<input class="app-form__input" type="text" name="name" placeholder="Имя">
 							<input class="app-form__input" type="tel" name="phone" placeholder="Телефон">
 							<input class="app-form__input" type="text" name="comment" placeholder="Сообщение">
-							<div class="app-form__info">Нажимая на кнопку вы даёте согласие на обработку своих персональных данных</div>
+							<div class="app-form__info">*Нажимая на кнопку вы даёте <a href="conf.docx" target="_blanc">согласие на обработку</a> своих персональных данных</div>
 							<button class="app-form__button"type="submit">Отправить</button>
 						</form>
                     </div>
@@ -362,7 +362,7 @@
                         </div>
                         <div class="trial__contactsBlock">
                             <div class="trial__line"></div>
-                            <div class="trial__adress">Адрес нашей школы</div>
+                            <div class="trial__adress">Телефоны</div>
                             <div class="trial__adressDesc">8 (928) 28-28-708 <br> 8 (861) 290-00-51</div>
                         </div>
                     </div>
@@ -388,7 +388,7 @@
 					</div>
 					<div class="block3 block d-none d-xl-block">
 						<a href="coach.html" class="menu-f">Тренера</a>
-						<a href="#" class="menu-f">Авторская методика</a>
+						<a href="about.html#author" class="menu-f">Авторская методика</a>
 						<a href="#" class="menu-f">Личный кабинет родителя</a>
 						<a href="about.html" class="menu-f">О компании</a>       
 					</div>
@@ -405,11 +405,39 @@
 				</div>
 			</div>
 		</div>
-  	</footer>
+    </footer>
+
+    <div id="trial" class="trial__form trial__form-popup mfp-hide">
+        <h2 class="trial__title">Запишитесь на первую <span>бесплатную тренировку прямо сейчас</span></h2>
+        <form class="app-form" action="" method="post">
+            <input class="app-form__input" type="text" name="name" placeholder="Имя">
+            <input class="app-form__input" type="tel" name="phone" placeholder="Телефон">
+            <input class="app-form__input" type="text" name="comment" placeholder="Сообщение">
+            <div class="app-form__info">*Нажимая на кнопку вы даёте <a href="conf.docx" target="_blanc">согласие на обработку</a> своих персональных данных</div>
+            <button class="app-form__button"type="submit">Отправить</button>
+        </form>
+	</div> 
 
     <script src="js/scripts.min.js"></script>
     
     <script>
+		$(document).ready(function() {
+
+			$('.popup-form').magnificPopup({
+				type: 'inline',
+            });
+
+            $('.popup-youtube').magnificPopup({
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+
+                fixedContentPos: false
+            });
+
+        });
+        
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             spaceBetween: 30,

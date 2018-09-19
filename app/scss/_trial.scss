@@ -20,6 +20,10 @@
             box-shadow: none;
             flex-direction: column;
         }
+        &-popup {
+            box-shadow: none;
+            justify-content: center;
+        }
     }
     &__title {
         text-align: center;
@@ -54,6 +58,10 @@
         &-coach {
             width: 100%;
             box-shadow: 0 10px 43px rgba(73, 73, 73, 0.18);
+        }
+        &-popup {
+            width: 450px;
+            margin: auto;
         }
     }
     &__faq {

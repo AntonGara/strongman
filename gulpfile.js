@@ -39,6 +39,7 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap/bootstrap.bundle.min.js',
 		'app/libs/swiper/swiper.min.js',
+		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -74,7 +75,7 @@ gulp.task('default', ['watch']);
 gulp.task('html', function() {
 	return gulp.src([
 		'app/*.html',
-		'app/*.mp4'
+		'app/*.docx'
 		])
 	.pipe(gulp.dest('docs/'))
 });
@@ -100,5 +101,12 @@ gulp.task('css', function() {
 	.pipe(gulp.dest('docs/css/'))
 });
 
-gulp.task('build', ['styles', 'js', 'html', 'css', 'img', 'fonts']);
+gulp.task('video', function() {
+	return gulp.src([
+		'app/video/*.*'
+		])
+	.pipe(gulp.dest('docs/video/'))
+});
+
+gulp.task('build', ['styles', 'js', 'html', 'css', 'img', 'fonts', 'video']);
 
