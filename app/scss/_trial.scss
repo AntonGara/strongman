@@ -60,7 +60,7 @@
             box-shadow: 0 10px 43px rgba(73, 73, 73, 0.18);
         }
         &-popup {
-            width: 450px;
+            max-width: 450px;
             margin: auto;
         }
     }

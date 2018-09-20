@@ -8,9 +8,6 @@
     .about-coach {
         padding-top: 0;
     }
-    .video {
-        height: 461px;
-    }
 	.motivation {
         padding-bottom: 39px;
         &__block {
@@ -315,6 +312,7 @@
         }
     }
     .video {
+        height: 345px;
         background-image: url(../img/video3.png);
         background-size: cover;
         &__title {
@@ -367,6 +365,28 @@
     .trainee {
         &__text {
             padding: 0 20px 20px 20px;
+        }
+    }
+    .blog {
+        &__wrapper {
+            padding-bottom: 20px;
+        }
+        &__inner {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        &__desc {
+            text-align: center;
+        }
+        &__title {
+            margin-top: 10px;
         }
     }
 }
@@ -455,6 +475,11 @@
         }
         &__comment {
             margin-bottom: 20px;
+        }
+    }
+    .app-video {
+        &__block {
+            height: 210px;
         }
     }
     .app-method {

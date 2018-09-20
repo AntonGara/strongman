@@ -1,0 +1,47 @@
+.blog {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 120px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        & img {
+            max-width: 300px;
+        }
+    }
+    &__content {
+        padding-left: 35px;
+    }
+    &__title {
+        color: #000000;
+        font-family: $optima;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+    }
+    &__subtitle {
+        color: #f08143;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.68px;
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    &__desc {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    &__link {
+        margin-top: 28px;
+        color: currentColor;
+        border-bottom: 1px solid #f08143;
+        &:hover {
+            color: #f08143;
+            text-decoration: none;
+        }
+    }
+}
